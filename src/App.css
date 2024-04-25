@@ -1,0 +1,167 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    height: 100%;
+
+    background: #252931;
+}
+
+main {
+    margin: 50px 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 8px;
+    flex-wrap: nowrap;
+
+    height: 80vh;
+    width: 90%;
+}
+
+.wrapper {
+    padding: 0 30px;
+    
+    height: 100%;
+    width: 100%;
+
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+
+.editor,
+.render {
+    font-size: 1rem;
+}
+
+.sep-bar {
+    width: 6px;
+    height: 100%;
+
+    /* border-radius: 2px; */
+
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.editor {
+    width: 100%;
+    height: 100%;
+
+    resize: none;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+/* RENDER STYLE */
+
+/* TITLES */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 15px;
+
+    color: #528BFF;
+}
+
+/* LIST */
+
+.render ul,
+.render ol {
+    margin: 15px;
+
+    padding-left: 30px;
+}
+
+/* BLOCKQUOTE */
+
+.render blockquote {
+    margin: 15px;
+
+    font-style: italic;
+
+    border-left: 1px solid #CCCCCC;
+}
+
+/* TEXT */
+
+.render p {
+    margin: 15px;
+}
+
+/* LINK */
+
+.render a {
+    margin: 15px 0;
+    color: #61AFEF;
+}
+
+/*  TABLE */
+
+.render table {
+    margin: 15px;
+
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.render table * {
+    padding: 6px;
+}
+
+.render table thead tr{
+    border-bottom: 2px solid #CCCCCC;
+}
+
+.render table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.render table tbody tr:last-child {
+    border: none;
+}
+
+/* FOOTNOTES */
+
+.footnotes {    
+    font-size: smaller;
+    color: #8b949e;
+    border-top: 1px solid #30363d;
+}
+/* hide title*/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    word-wrap: normal;
+    border: 0;
+}
+
+
+/* DEFINITION LIST */
+
+dt {
+    margin: 5px 0;
+
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 25px;
+}
+
+/* TASK LIST */
+
+.contains-task-list {
+    list-style: none;
+}
